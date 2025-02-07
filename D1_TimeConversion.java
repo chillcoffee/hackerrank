@@ -25,7 +25,13 @@ class Result {
 
         int hour = Integer.parseInt(times[0]);
         if(times[2].toUpperCase().contains("PM")){
-            hour += 12;
+            if(hour!=12){
+                hour += 12;
+            }
+        }else if (times[2].toUpperCase().contains("AM")){
+            if(hour == 12){
+                hour = 0;
+            }
         }
         String militaryTime = "";
         if(hour < 10){
