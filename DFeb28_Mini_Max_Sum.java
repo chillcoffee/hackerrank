@@ -8,7 +8,7 @@ class Result {
 
     public static void miniMaxSum(List<Integer> arr) {
     // Write your code here
-        int min = 0, max = 0, sum = 0;
+        long min = 0, max = 0, sum = 0;
         for(int cur = 0; cur < arr.size(); cur++){
             sum = 0;
             for(int i=0; i< arr.size(); i++){
