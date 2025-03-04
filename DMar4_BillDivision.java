@@ -28,9 +28,9 @@ class Result {
             if(k==i) continue;
             total += bill.get(i);
         }
-        int fair = bill.get(k) - total/bill.size();
-        int diff = b - fair;
-        if(fair == b){
+        int bActual = total/2;
+        int diff = b - bActual;
+        if(diff == 0){
             System.out.println("Bon Appetit");
         }else{
             System.out.println(diff);
